@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	.panel.panel-default(id='loginPanel')
+		.panel-body
+			form(method='post')
+				h1 Iniciar Sesión
+				.form-group
+					label Usuario
+					input.form-control(type='text', name='user', placeholder='Nombre de Usuario')
+				.form-group
+					label Contraseña
+					input.form-control(type='password', name='password' placeholder='Contraseña')
+				.form-group
+					button.btn.btn-default(type='submit') Registrarse

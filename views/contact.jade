@@ -1,0 +1,20 @@
+extends layout
+
+block content
+	.container
+		form(method='post', action='contact/send' target='_blank')
+			h1 Contact
+			.form-group
+				label Nombre
+				input.form-control(type='text', name='cName', placeholder='Nombre')
+			.form-group
+				label Email
+				input.form-control(type='email', name='email', placeholder='Email')
+			.form-group
+				label Asunto
+				input.form-control(typr='text', name='subject', placeholder='Asunto')
+			.form-group
+				label Mensaje
+				textarea.form-control(name='message', placeholder='Ingrese el Mensaje....')
+			.form-group
+				button.btn.btn-default(type='submit') Enviar
